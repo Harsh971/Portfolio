@@ -779,6 +779,11 @@ h3.my-profession {
     padding: 0 50px;
 }
 /*_______________________________Media Queries_______________________________*/
+@media(min-width:1200px){
+	.blogimg {
+		height:240px; width:450px;
+	}
+}
 @media(max-width:1199px){
     .aside{
         left: -270px;
@@ -802,6 +807,9 @@ h3.my-profession {
     .about .about-content .personal-info .info-item p span {
         display: block;
     }
+	.blogimg {
+		height:240px; width:350px;
+	}	
 }
 @media(max-width:991px){
     .portfolio .portfolio-item,
@@ -832,6 +840,9 @@ h3.my-profession {
     .home .home-img{
         display: none;
     }
+	.blogimg {
+		height:240px; width:450px;
+	}
 }
 @media(max-width:767px){
     
