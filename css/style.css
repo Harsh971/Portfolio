@@ -290,7 +290,7 @@ h3.my-profession {
 }
 .home-info p {
     margin-bottom: 70px;
-    font-size: 20px;
+    font-size: 17px;
     color: var(--tex-black-700);
 }
 .home .home-img {
@@ -808,7 +808,7 @@ h3.my-profession {
         display: block;
     }
 	.blogimg {
-		height:240px; width:350px;
+		height:240px; width:400px;
 	}	
 }
 @media(max-width:991px){
@@ -824,8 +824,15 @@ h3.my-profession {
     }
 
     .techstack .techstack-item{
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    .techstack .techstack-item .techstack-item-inner .techstack-img img{
+        flex: 0 0 33%;
+        height: 45px;
+        width: 50px;
+        margin-left: -5px;
     }
 
     .blog .blog-item{
@@ -841,7 +848,7 @@ h3.my-profession {
         display: none;
     }
 	.blogimg {
-		height:240px; width:450px;
+		height:240px; width:350px;
 	}
 }
 @media(max-width:767px){
@@ -852,6 +859,7 @@ h3.my-profession {
     .about .about-content .experience,
     .about .about-content .skills,
     .about .about-content .personal-info,
+    .about .about-content .personal-info .info-item,
     .blog .blog-item{
         flex: 0 0 100%;
         max-width: 100%;
@@ -867,4 +875,8 @@ h3.my-profession {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
+    .blogimg {
+		height:150px; width:250px;
+	}
 }
