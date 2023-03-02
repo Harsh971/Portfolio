@@ -717,8 +717,8 @@ h3.my-profession {
     margin-bottom: 60px;
 }
 .contact .contact-info-item {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 20%;
+    max-width: 20%;
     text-align: center;
     margin-bottom: 60px;
 }
