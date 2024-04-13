@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #a0ffd0;
+  --background-color: #1E1E2E;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  font-family: 'Baloo 2', cursive;
+}
+
+.navbar {
+  margin: 0 auto;
+  min-height: 20vh;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar p {
+  color: #ffffffdd;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  position: relative;
+ 
+}
+ 
+ p{
+	 margin-bottom:30px;
+ }
+ 
+.container {
+  margin: 0 auto;
+  min-height: 70vh;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  padding: 12px 36px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--primary-color);            
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+  font-size: 18px;
+  background-color: #ffffff11;
+}
+
+a:hover {
+  background-color: #ffffff55;
+}
+
+/*_______________________________Media Queries_______________________________*/
+@media(max-width:1199px){
+   .title{		
+		font-size:45px;		
+	}
+	p{
+		font-size:15px;			
+	}
+}
+@media(max-width:991px){
+    .title{		
+		font-size:28px;		
+	}
+	p{
+		font-size:12px;			
+	}
+	a {
+	  text-decoration: none;
+	  padding: 9px 24px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  transition: 0.5s;
+	  background-size: 200% auto;
+	  color: var(--primary-color);            
+	  border-radius: 10px;
+	  font-weight: bold;
+	  border: 2px solid var(--primary-color);
+	  font-size: 12px;
+	  background-color: #ffffff11;
+	}
+	 p{
+	 margin-bottom:0px;
+	}
+}
+@media(max-width:767px){
+    
+     .title{		
+		font-size:20px;		
+	}
+	p{
+		font-size:9px;			
+	}
+	a {
+	  text-decoration: none;
+	  padding: 9px 24px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  transition: 0.5s;
+	  background-size: 200% auto;
+	  color: var(--primary-color);            
+	  border-radius: 10px;
+	  font-weight: bold;
+	  border: 2px solid var(--primary-color);
+	  font-size: 12px;
+	  background-color: #ffffff11;
+	}
+	 p{
+	 margin-bottom:0px;
+	}
+}
