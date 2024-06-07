@@ -1,0 +1,313 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* Text color */
+}
+
+/* Topic list styles */
+.topic-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.topic-btn {
+  padding: 10px 20px;
+  margin: 0 6px;
+  border: none;
+  font-size: 21px;
+  background-color: transparent; /* Set button background color as transparent */
+  color: white;
+  cursor: pointer;
+  border-bottom: 2px solid #27B3C3; /* Add bottom border */
+  border-radius: 0; /* Remove border radius */
+  transition: border-bottom-color 0.3s ease; /* Add transition for border color */
+}
+
+.topic-btn:hover {
+  border-bottom-color: #45a049; /* Change bottom border color on hover */
+}
+
+.topic-btn:focus {
+  outline: none;
+}
+
+/* Add some space between buttons */
+.topic-btn + .topic-btn {
+  margin-left: 5px;
+}
+
+/* Rounded corners for the first and last buttons */
+.topic-btn:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.topic-btn:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Project container styles */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-task {
+  background-color: #1f1f1f; /* Project container background */
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.project-heading {
+ 
+  
+  border-radius: 5px;
+  margin: 20px;
+  padding: -10px;
+   border-bottom: 1px solid white; /* Add a solid black line at the bottom */
+   display:flex;
+   justify-content: space-between; /* Space items evenly along the main axis */
+  align-items: center; /* Align items vertically in the center */
+   padding: 0 30px; /* Add padding on both sides */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 5px;
+display: flex;
+        justify-content: center; /* Horizontally center content */
+}
+
+.project-details {
+  padding-top: 10px;
+}
+
+
+
+.project-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #27B3C3;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+}
+
+/* styles.css */
+
+/* Button default styles */
+.project-btn {
+margin-right:10px;  
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: transparent; /* Set button background color as transparent */
+  color: #ffffff; /* Text color */
+  border: 2px solid #27B3C3; /* Border color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for background and text color */
+}
+
+.read-more-btn {
+margin-left:10px;
+  display: inline-block;
+}
+
+/* Button hover styles */
+.project-btn:hover {
+  background-color: white; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+/* styles.css */
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  z-index: 1000;
+  overflow: auto;
+}
+
+.popup-content {
+  position: relative;
+  margin: 75px auto; /* Center the popup vertically */
+  width: 75%; /* 75% width */
+  max-width: 600px; /* Maximum width */
+  background-color: #1f1f1f; /* Popup background color */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-content h3,
+.popup-content p {
+  color: #ffffff;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content .project-btn {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+  .popup-content {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* styles.css */
+
+/* Add animation to project sections */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0; /* Initially hide the sections */
+  animation: fadeIn 0.9s ease forwards; /* Apply fadeIn animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide down effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* styles.css */
+
+/* Add animation to popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  z-index: 1000;
+  overflow: auto;
+  opacity: 0; /* Initially hide the popup */
+  animation: fadeIn 0.5s ease forwards; /* Apply fadeIn animation */
+}
+
+.popup-content {
+  position: relative;
+  margin: 75px auto; /* Center the popup vertically */
+  width: 75%; /* 75% width */
+  max-width: 600px; /* Maximum width */
+  background-color: #1f1f1f; /* Popup background color */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide up effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* styles.css */
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%; /* Set sidebar width to 25% */
+height:100%;
+  background-color: #333; /* Sidebar background color */
+  padding: 20px;
+}
+
+/* Top section styles */
+.sidebar-top {
+  margin-bottom: 15px; /* Add space between top and bottom sections */
+}
+
+.sidebar-top img {
+  max-width: 100%; /* Ensure image fits within the sidebar */
+  display: block;
+}
+
+/* Bottom section styles */
+.sidebar-bottom {
+margin-top:-20px;
+  overflow-y: auto; /* Add vertical scrollbar */
+  max-height: 100%; /* Set max height for the bottom section */
+ position: relative;
+
+}
+
+.topic-list {
+  padding: 20px;
+margin-bottom:-20px;
+}
+
+.topic-btn {
+  display: block; /* Display buttons as block elements */
+  
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 220px; /* Adjust to make space for the sidebar */
+  padding: 20px;
+}
+
+/* Scrollbar styles */
+.sidebar-bottom::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.sidebar-bottom::-webkit-scrollbar-thumb {
+  background-color: #27B3C3; /* Scrollbar thumb color */
+  border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
+.sidebar-bottom::-webkit-scrollbar-track {
+  background-color: #333; /* Scrollbar track color */
+}
