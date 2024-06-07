@@ -6,6 +6,24 @@ var typed = new Typed(".typing",{
     loop:true
 })
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Wait for the entire page to load including images and styles
+    window.addEventListener("load", function() {
+        // Ensure the loading animation stays for at least 3 seconds
+        setTimeout(function() {
+            // Start the fade-out transition
+            document.getElementById('loading-animation').style.opacity = '0';
+
+            // When the transition ends, hide the loading animation and show the content
+            document.getElementById('loading-animation').addEventListener('transitionend', function() {
+                document.getElementById('loading-animation').style.display = 'none';
+                document.getElementById('content').style.opacity = '1';
+                document.body.style.overflow = 'auto'; // Restore scroll
+            });
+        }, 3000); // 3000 milliseconds = 3 seconds
+    });
+});
+
 /* Aside */
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),
