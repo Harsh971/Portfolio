@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar">
+  <!-- Top section with image -->
+  <div class="sidebar-top">
+    <img src="images/devops-logo.png" alt="Docker Logo">
+  </div>
+  <!-- Bottom section with topic list -->
+  <div class="sidebar-bottom">
+  
+	<div class="topic-list">
+      <button class="topic-btn" id="defaultbtn" onclick="showProjects('jenkins')">Jenkins</button>
+    </div>
+	
+    <div class="topic-list">
+      <button class="topic-btn" onclick="showProjects('docker')">Docker</button>
+    </div>
+	
+	<div class="topic-list">
+      <button class="topic-btn" onclick="showProjects('github')">GitHub</button>
+    </div>
+
+	<div class="topic-list"></div>
+	<div class="topic-list"></div>
+	<div class="topic-list"></div>
+	<div class="topic-list"></div>
+	<div class="topic-list"></div>
+	<div class="topic-list"></div>
+
+	
+
+
+    
+  </div>
+</div>
+
+<div class="main-content">
+<div id="jenkins" class="project-container">
+<div class="project-heading" style="width:80%; padding-top:0px; padding-bottom:0px;">
+<h1 style="text-align:left;">Jenkins</h1>
+<div class="buttons">
+        <a target="black" href="" >
+			<img style="height:90px; width:60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/742px-Jenkins_logo.svg.png">
+		</a>
+      
+      </div>
+</div>
+<!-- Jenkins Projects -->
+  <div class="project-task">
+    <div class="project-image">
+      <img src="images/devops-1.png" alt="DevOps Project 1 Image" style="height:200px; width:400px;">
+    </div>
+    <div class="project-details">
+      <h3>Notes App CICD</h3>
+	  <p></p>
+      <div class="buttons">
+        <a target="black" href="https://github.com/Harsh971/Notes-App-CICD" class="project-btn">View More</a>
+      </div>
+    </div>
+  </div>
+  <!-- Other Docker Projects... -->
+
+
+</div>
+
+<div id="docker" class="project-container">
+<div class="project-heading" style="width:80%; padding-top:0px; padding-bottom:0px;">
+<h1 style="text-align:left;">Docker</h1>
+<div class="buttons">
+        <a target="black" href="" >
+			<img style="height:60px; width:120px;" src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png">
+		</a>
+      
+      </div>
+</div>
+<!-- Docker Projects -->
+  <div class="project-task">
+    <div class="project-image">
+      <img src="images/devops-1.png" alt="DevOps Project 1 Image" style="height:200px; width:400px;">
+    </div>
+    <div class="project-details">
+      <h3>Notes App CICD</h3>
+	  <p></p>
+      <div class="buttons">
+        <a target="black" href="https://github.com/Harsh971/Notes-App-CICD" class="project-btn">View More</a>
+      </div>
+    </div>
+  </div>
+  <!-- Other Docker Projects... -->
+
+
+</div>
+
+<div id="github" class="project-container">
+<div class="project-heading" style="width:80%; padding-top:0px; padding-bottom:0px;">
+<h1 style="text-align:left;">Github</h1>
+<div class="buttons">
+        <a target="black" href="" >
+			<img style="height:90px; width:90px;" src="https://i.pinimg.com/736x/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg">
+		</a>
+      
+      </div>
+</div>
+<!-- Github Projects -->
+  <div class="project-task">
+    <div class="project-image">
+      <img src="images/devops-1.png" alt="DevOps Project 1 Image" style="height:200px; width:400px;">
+    </div>
+    <div class="project-details">
+      <h3>Notes App CICD</h3>
+	  <p></p>
+      <div class="buttons">
+        <a target="black" href="https://github.com/Harsh971/Notes-App-CICD" class="project-btn">View More</a>
+      </div>
+    </div>
+  </div>
+  <!-- Other Gitub Projects... -->
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+ <!-- Popup/Modal -->
+ 
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h3>Project 1</h3>
+      <p>Additional details about the project...</p>
+      <a href="web_project_output1.html" class="project-btn">View Output</a>
+    </div>
+  </div>
+
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
