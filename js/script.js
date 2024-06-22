@@ -79,3 +79,28 @@ const nav = document.querySelector(".nav"),
             }
         }
 
+
+		
+		function updateViewCount() {
+            // Get the current count from localStorage
+            let count = localStorage.getItem('viewCount');
+            
+            // If the count is not found, initialize it to 0
+           if (!count || parseInt(count) < 3000) {
+                count = 3000;
+            }
+            
+            // Increment the count
+            count = parseInt(count) + 1;
+            
+            // Store the new count in localStorage
+            localStorage.setItem('viewCount', count);
+            
+            // Update the displayed count on the page
+            document.getElementById('view-count').textContent = count;
+        }
+
+        // Run the updateViewCount function when the page loads
+        document.addEventListener('DOMContentLoaded', (event) => {
+            updateViewCount();
+        });
