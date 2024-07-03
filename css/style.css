@@ -915,8 +915,8 @@ h3.my-profession {
 }
 
 #loading-animation img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 200%;
+    max-height: 200%;
 }
 
 #content {
